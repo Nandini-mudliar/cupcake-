@@ -1,21 +1,27 @@
-CUPID CUPCAKE WEBSITE
-=====================
+CUPID CUPCAKE — UPDATED WEBSITE
+================================
 
 Files:
-- index.html: homepage
-- order.html: separate order page with interactive cart and demo checkout
-- styles.css: responsive styling
-- script.js: mobile navigation, newsletter feedback, cart and checkout interactions
-- assets/cupcake-hero.png: supplied cupcake image
+- index.html — homepage
+- order.html — separate order page
+- styles.css — responsive styling, glow effects and animations
+- script.js — mobile navigation, scroll reveals, cart and demo checkout
+- Vanilla Cloud.jpg
+- Minty Crush.webp
+- Strawberry Kiss.jpg
+- Choco Heart.jpg
+- Cupid Cupcake Hero.png
 
-HOW TO RUN
-1. Extract the ZIP folder.
-2. Keep the assets folder beside the HTML, CSS and JS files.
-3. Open index.html in a browser, or place the folder inside XAMPP's htdocs and visit:
-   http://localhost/cupid_cupcake_website/
+All five image files are in the MAIN PROJECT FOLDER beside the HTML files.
+There is no assets folder. Keep the image filenames unchanged.
 
-NOTES
-- The order page supports adding/removing quantities and calculates subtotal, delivery and total.
-- Delivery is ₹40 below ₹499 and free at ₹499 or above.
-- Checkout is a front-end demo only. It does not save orders, send them to a shop, or process payments.
-- Replace the sample address, phone details and social links with your real business information.
+Run:
+1. Extract the ZIP.
+2. Open index.html with VS Code Live Server.
+
+XAMPP:
+Copy this folder into htdocs, start Apache, then visit:
+http://localhost/CupidCupcake_Updated/
+
+The order page has a working front-end cart. Delivery is ₹40 below ₹499 and free at ₹499 or above.
+Checkout is a demo only: no order is saved, sent or paid for.
