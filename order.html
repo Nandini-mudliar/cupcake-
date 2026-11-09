@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Order Online | Cupid Cupcake</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Oswald:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="order-page">
+  <div class="top-strip"><span>♡ 123 Sweet Street, Dessert City</span><span>✦ Freshly baked happiness · Free delivery over ₹499</span><span>◷ Mon – Sun: 10:00 AM – 10:00 PM</span></div>
+  <header class="site-header">
+    <a class="brand" href="index.html"><span class="brand-mark">🧁</span><span class="brand-name">cupid <b>cupcake</b><small>LITTLE CAKES, BIG LOVE</small></span></a>
+    <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+    <nav class="main-nav"><a href="index.html#home">HOME</a><a href="index.html#flavors">FLAVOURS</a><a href="index.html#about">ABOUT US</a><a class="nav-order active-order" href="order.html">ORDER ONLINE ♡</a></nav>
+  </header>
+
+  <main class="order-main">
+    <div class="order-intro"><p class="eyebrow">Your happy little box is waiting</p><h1>MAKE IT A <em>SWEET DAY.</em></h1><p>Choose your favourites, add them to your box and send a little sweetness on its way.</p></div>
+    <div class="order-layout">
+      <section class="order-catalog">
+        <div class="section-heading"><div><p class="eyebrow">Fresh from our oven</p><h2>THE CUPCAKE MENU</h2></div><span class="menu-note">Baked fresh daily ♡</span></div>
+        <div class="order-grid" id="order-grid">
+          <article class="order-item" data-name="Strawberry Kiss" data-price="99"><div class="order-emoji strawberry">🍓</div><div><h3>Strawberry Kiss</h3><p>Berry buttercream, vanilla sponge</p><b>₹99</b></div><button class="add-button" aria-label="Add Strawberry Kiss">+</button></article>
+          <article class="order-item" data-name="Choco Heart" data-price="109"><div class="order-emoji chocolate">🍫</div><div><h3>Choco Heart</h3><p>Chocolate sponge, silky ganache</p><b>₹109</b></div><button class="add-button" aria-label="Add Choco Heart">+</button></article>
+          <article class="order-item" data-name="Vanilla Cloud" data-price="89"><div class="order-emoji vanilla">🍦</div><div><h3>Vanilla Cloud</h3><p>Classic vanilla, cloud-like frosting</p><b>₹89</b></div><button class="add-button" aria-label="Add Vanilla Cloud">+</button></article>
+          <article class="order-item" data-name="Minty Crush" data-price="109"><div class="order-emoji mint">🌿</div><div><h3>Minty Crush</h3><p>Mint cream, chocolate chips</p><b>₹109</b></div><button class="add-button" aria-label="Add Minty Crush">+</button></article>
+          <article class="order-item" data-name="Mango Blush" data-price="99"><div class="order-emoji mango">🥭</div><div><h3>Mango Blush</h3><p>Mango frosting, soft vanilla base</p><b>₹99</b></div><button class="add-button" aria-label="Add Mango Blush">+</button></article>
+          <article class="order-item" data-name="Cookies & Cream" data-price="119"><div class="order-emoji cookies">🍪</div><div><h3>Cookies & Cream</h3><p>Cookie crumble, cream frosting</p><b>₹119</b></div><button class="add-button" aria-label="Add Cookies & Cream">+</button></article>
+        </div>
+      </section>
+      <aside class="cart-panel">
+        <div class="cart-title"><h2>YOUR SWEET BOX</h2><span>♡</span></div>
+        <div id="cart-items" class="cart-items"><p class="empty-cart">Your box is waiting for cupcakes!<br><span>Choose a treat to get started.</span></p></div>
+        <div class="cart-total"><span>Subtotal</span><b id="subtotal">₹0</b></div>
+        <div class="cart-total delivery"><span>Delivery</span><b id="delivery">₹40</b></div>
+        <div class="cart-total grand-total"><span>Total</span><b id="total">₹40</b></div>
+        <p class="delivery-hint" id="delivery-hint">Free delivery on orders over ₹499.</p>
+        <form id="checkout-form" class="checkout-form">
+          <h3>DELIVERY DETAILS</h3>
+          <label>Your name<input name="customer" type="text" placeholder="Enter your name" required></label>
+          <label>Phone number<input name="phone" type="tel" placeholder="10-digit phone number" pattern="[0-9]{10}" required></label>
+          <label>Delivery address<textarea name="address" rows="3" placeholder="House no., street, area..." required></textarea></label>
+          <label>Special note <small>(optional)</small><input name="note" type="text" placeholder="A birthday message, allergy note..."></label>
+          <button class="button button-primary checkout-button" type="submit">PLACE ORDER <span>♡</span></button>
+          <p class="checkout-disclaimer">Demo checkout: this form shows an order summary but does not process payment.</p>
+        </form>
+      </aside>
+    </div>
+    <div class="order-back"><a href="index.html">← Back to Cupid Cupcake home</a></div>
+  </main>
+  <footer><div class="footer-bottom"><span>© 2026 Cupid Cupcake. Made with ♡.</span><span>BAKED FRESH · SHARED WITH LOVE</span></div></footer>
+  <script src="script.js"></script>
+</body>
+</html>
